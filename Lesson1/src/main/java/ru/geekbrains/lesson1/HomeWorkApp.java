@@ -68,7 +68,8 @@ public class HomeWorkApp {
     {
         int c=a+b;
         boolean rslt = false;
-        if ((c >=10)&&(c<=20))
+        return(c >=10) && (c<=20);
+
             rslt=true;
         return rslt;
     }
