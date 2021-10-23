@@ -1,41 +1,46 @@
 package ru.geekbrains.lesson1;
 
+import com.sun.java.swing.plaf.windows.resources.windows;
+
 import java.util.Random;
 import java.util.Arrays;
 
 public class HomeWorkApp {
     public static void main(String[] args) {
-        /*System.out.print("Сумма чисел 5 и 12 в диапазоне [10...20] ");
-        System.out.println(checkSumm(5,12));
-        System.out.print("Число 10 явлется: ");
-        System.out.println(checkNum(10,false)==false?"положительным":"отрицательным");
-        System.out.print("Число -10: ");
-        checkNum(-10,true);
-        System.out.println("Функция вывода строки заданное число раз:");
-        printString("Hello",5);
-        System.out.print("Год 2000 ");
-        System.out.println(checkYear(2000)==true?"Високосный":"Невисокосный");
-        System.out.print("Год 2001 ");
-        System.out.println(checkYear(2001)==true?"Високосный":"Невисокосный");*/
-
-        task1Function(10);
-        System.out.println();
-        System.out.println(Arrays.toString(task2Function()));
-        System.out.println();
-        System.out.println(Arrays.toString(task3Function()));
-        System.out.println();
-        fillMatrix(4);
-        System.out.println();
-        int[] testArray = new int[] { 1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1 };
-        MinMax(testArray);
-        System.out.println();
-        System.out.println(Arrays.toString(fillArray(16,1)));
-        System.out.println();
-        //testArray = new int[] { 2, 2, 2, 1, 2, 2,10, 1};
-        if (findMidPlace(testArray) == true){
-            System.out.println("Array:"+Arrays.toString(testArray));
-            System.out.println("Has a place where left and right sum's are the same");
+        /*PersonWorker[] persArray = new PersonWorker[5];
+        for (int i=0;i<5;i++){
+            persArray[i] = new PersonWorker("Person_"+i,"Position_"+i, "Phone_number_"+i,"Main"+i+"@corp",i*1024.75,38+i);
         }
+        System.out.println("Created elements");
+        for (int i=0;i<5;i++){
+            System.out.println("Element: "+i);
+            persArray[i].print();
+            System.out.println();
+        }
+        System.out.println("Filtered persons with age >40");
+        for (int i=0;i<5;i++){
+            if (persArray[i].getAge()>=40){
+                System.out.println("Element: "+i);
+                persArray[i].print();
+                System.out.println();
+            }
+        }*/
+        Cat cat1 = new Cat("Том");
+        Dog dog1 = new Dog("Бобик");
+        cat1.run(100);
+        cat1.run(400);
+        dog1.run(200);
+        cat1.swim(100);
+        dog1.swim(10);
+        dog1.swim(100);
+        Cat[] catAr = new Cat[3];
+        Dog[] dogAr = new Dog[3];
+        System.out.println("-----------------");
+        for (int i=0;i<3;i++){
+            catAr[i]=new Cat("Кот"+i);
+            dogAr[i]=new Dog("Собак"+i);
+        }
+
     }
 
     public static void task1Function(int arlen) {
